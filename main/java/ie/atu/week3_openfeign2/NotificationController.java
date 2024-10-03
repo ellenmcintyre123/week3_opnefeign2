@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class NotificationController {
     @PostMapping("/confirm-details")
     public String someDetails(@RequestBody  Product product){
-        return "Received details for " + product.getId() + " with name " + product.getName();
+        return "Received details for id " + product.getId() + " with the name " + product.getName();
     }
 
 
